@@ -7,4 +7,18 @@
 <p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>皇室奇兵2023.11.1平衡调整</title>
+    <url>/2023/11/01/%E7%9A%87%E5%AE%A4%E5%A5%87%E5%85%B52023-11-1%E5%B9%B3%E8%A1%A1%E8%B0%83%E6%95%B4/</url>
+    <content><![CDATA[<p><img src="/images/balance.jpg" alt="平衡调整" title="平衡调整"></p>
+<h1 id="BUFF"><a href="#BUFF" class="headerlink" title="BUFF:"></a>BUFF:</h1><p>鹿妹：<br>基础生命值+5<br>鹿形态生命值加成：10→15  </p>
+<p>锤子：<br>基础生命值+10<br>攻击速度+0.1s  </p>
+<p>樵夫：<br>基础生命值：8→10<br>攻击速度：0.5→0.6s  </p>
+<h1 id="NERF"><a href="#NERF" class="headerlink" title="NERF:"></a>NERF:</h1><p>闰土：<br>大招伤害：12→9（于最大等级时）  </p>
+<p>盾妹：<br>基础生命值-5<br>在1血时获得能量：8→2  </p>
+<p>奶矛：<br>能量：4→5<br>开局能量：2→1  </p>
+<p>火法：<br>基础生命值：10→9<br>升级生命值：6→5  </p>
+<h1 id="REWORK"><a href="#REWORK" class="headerlink" title="REWORK:"></a>REWORK:</h1><p>幽灵：<br>BUG修复：现在被海王扔出时不会隐身海王<br>战吼隐身时间：6→7s</p>
+]]></content>
+  </entry>
 </search>
