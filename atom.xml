@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-03T05:54:56.209Z</updated>
+  <updated>2024-02-13T03:32:16.476Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/"/>
+    <id>http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/</id>
+    <published>2024-02-13T03:25:19.973Z</published>
+    <updated>2024-02-13T03:32:16.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>##检测到 #include 错误。请更新 includePath解决办法</p><p>用vscode时遇到了这样的报错<br><img src="/images/bug1.jpg/bug1" alt="bug" title="bug"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;##检测到 #include 错误。请更新 includePath解决办法&lt;/p&gt;
+&lt;p&gt;用vscode时遇到了这样的报错&lt;br&gt;&lt;img src=&quot;/images/bug1.jpg/bug1&quot; alt=&quot;bug&quot; title=&quot;bug&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>皇室奇兵2023.11.1平衡调整</title>
