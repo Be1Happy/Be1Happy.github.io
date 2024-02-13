@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>皇室奇兵2023.11.1平衡调整</title>
-    <url>/2023/11/01/%E7%9A%87%E5%AE%A4%E5%A5%87%E5%85%B52023-11-1%E5%B9%B3%E8%A1%A1%E8%B0%83%E6%95%B4/</url>
-    <content><![CDATA[<p><img src="/images/balance.jpg" alt="平衡调整" title="平衡调整"></p>
-<h1 id="BUFF"><a href="#BUFF" class="headerlink" title="BUFF:"></a>BUFF:</h1><p>鹿妹：<br>基础生命值+5<br>鹿形态生命值加成：10→15  </p>
-<p>锤子：<br>基础生命值+10<br>攻击速度+0.1s  </p>
-<p>樵夫：<br>基础生命值：8→10<br>攻击速度：0.5→0.6s  </p>
-<h1 id="NERF"><a href="#NERF" class="headerlink" title="NERF:"></a>NERF:</h1><p>闰土：<br>大招伤害：12→9（于最大等级时）  </p>
-<p>盾妹：<br>基础生命值-5<br>在1血时获得能量：8→2  </p>
-<p>奶矛：<br>能量：4→5<br>开局能量：2→1  </p>
-<p>火法：<br>基础生命值：10→9<br>升级生命值：6→5  </p>
-<h1 id="REWORK"><a href="#REWORK" class="headerlink" title="REWORK:"></a>REWORK:</h1><p>幽灵：<br>BUG修复：现在被海王扔出时不会隐身海王<br>战吼隐身时间：6→7s  </p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=747970921&bvid=BV13C4y1J7E4&cid=1319432892&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    <title>Test</title>
+    <url>/2023/11/01/text/</url>
+    <content><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><code>代码</code><br><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p>
+<p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>
 ]]></content>
   </entry>
   <entry>
-    <title>检测到</title>
+    <title>检测到 /#include 错误。请更新 includePath解决办法</title>
     <url>/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/</url>
-    <content><![CDATA[<p>##检测到 #include 错误。请更新 includePath解决办法</p>
+    <content><![CDATA[<p>#检测到 #include 错误。请更新 includePath解决办法</p>
 <p>用vscode时遇到了这样的报错<br><img src="/images/a1.png" alt="bug" title="bug"></p>
 <p>通过修改编译器路径等方法都没用</p>
 <p>win+R打开终端<br>输入</p>
@@ -37,10 +29,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Test</title>
-    <url>/2023/11/01/text/</url>
-    <content><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><code>代码</code><br><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p>
-<p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>
+    <title>皇室奇兵2023.11.1平衡调整</title>
+    <url>/2023/11/01/%E7%9A%87%E5%AE%A4%E5%A5%87%E5%85%B52023-11-1%E5%B9%B3%E8%A1%A1%E8%B0%83%E6%95%B4/</url>
+    <content><![CDATA[<p><img src="/images/balance.jpg" alt="平衡调整" title="平衡调整"></p>
+<h1 id="BUFF"><a href="#BUFF" class="headerlink" title="BUFF:"></a>BUFF:</h1><p>鹿妹：<br>基础生命值+5<br>鹿形态生命值加成：10→15  </p>
+<p>锤子：<br>基础生命值+10<br>攻击速度+0.1s  </p>
+<p>樵夫：<br>基础生命值：8→10<br>攻击速度：0.5→0.6s  </p>
+<h1 id="NERF"><a href="#NERF" class="headerlink" title="NERF:"></a>NERF:</h1><p>闰土：<br>大招伤害：12→9（于最大等级时）  </p>
+<p>盾妹：<br>基础生命值-5<br>在1血时获得能量：8→2  </p>
+<p>奶矛：<br>能量：4→5<br>开局能量：2→1  </p>
+<p>火法：<br>基础生命值：10→9<br>升级生命值：6→5  </p>
+<h1 id="REWORK"><a href="#REWORK" class="headerlink" title="REWORK:"></a>REWORK:</h1><p>幽灵：<br>BUG修复：现在被海王扔出时不会隐身海王<br>战吼隐身时间：6→7s  </p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=747970921&bvid=BV13C4y1J7E4&cid=1319432892&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 ]]></content>
   </entry>
 </search>
