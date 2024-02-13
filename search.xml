@@ -8,27 +8,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>检测到</title>
-    <url>/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/</url>
-    <content><![CDATA[<p>##检测到 #include 错误。请更新 includePath解决办法</p>
-<p>用vscode时遇到了这样的报错<br><img src="/images/a1.jpg" alt="bug" title="bug"></p>
-<p>通过修改编译器路径等方法都没用</p>
-<p>win+R打开终端<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure>
-<p>复制如下内容 </p>
-<p><img src="/images/a2.jpg" alt="bug" title="bug"></p>
-<p>在vscode中摁ctrl+shift+p搜索json文件 </p>
-<p><img src="/images/a5.jpg" alt="bug" title="bug"></p>
-<p>将刚才复制内容粘贴至includePath中，注意格式 </p>
-<p><img src="/images/a3.jpg" alt="bug" title="bug"></p>
-<p>完成 </p>
-<p><img src="/images/a4.jpg" alt="bug" title="bug"></p>
-]]></content>
-      <tags>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>皇室奇兵2023.11.1平衡调整</title>
     <url>/2023/11/01/%E7%9A%87%E5%AE%A4%E5%A5%87%E5%85%B52023-11-1%E5%B9%B3%E8%A1%A1%E8%B0%83%E6%95%B4/</url>
     <content><![CDATA[<p><img src="/images/balance.jpg" alt="平衡调整" title="平衡调整"></p>
@@ -42,5 +21,26 @@
 <h1 id="REWORK"><a href="#REWORK" class="headerlink" title="REWORK:"></a>REWORK:</h1><p>幽灵：<br>BUG修复：现在被海王扔出时不会隐身海王<br>战吼隐身时间：6→7s  </p>
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=747970921&bvid=BV13C4y1J7E4&cid=1319432892&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 ]]></content>
+  </entry>
+  <entry>
+    <title>检测到</title>
+    <url>/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/</url>
+    <content><![CDATA[<p>##检测到 #include 错误。请更新 includePath解决办法</p>
+<p>用vscode时遇到了这样的报错<br><img src="/images/a1.png" alt="bug" title="bug"></p>
+<p>通过修改编译器路径等方法都没用</p>
+<p>win+R打开终端<br>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure>
+<p>复制如下内容 </p>
+<p><img src="/images/a2.png" alt="bug" title="bug"></p>
+<p>在vscode中摁ctrl+shift+p搜索json文件 </p>
+<p><img src="/images/a5.png" alt="bug" title="bug"></p>
+<p>将刚才复制内容粘贴至includePath中，注意格式 </p>
+<p><img src="/images/a3.png" alt="bug" title="bug"></p>
+<p>完成 </p>
+<p><img src="/images/a4.png" alt="bug" title="bug"></p>
+]]></content>
+      <tags>
+        <tag>bug</tag>
+      </tags>
   </entry>
 </search>
