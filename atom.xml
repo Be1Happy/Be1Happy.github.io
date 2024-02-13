@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-13T03:46:44.992Z</updated>
+  <updated>2024-02-13T03:54:21.231Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,17 +21,16 @@
     <link href="http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/"/>
     <id>http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/</id>
     <published>2024-02-13T03:45:14.000Z</published>
-    <updated>2024-02-13T03:46:44.992Z</updated>
+    <updated>2024-02-13T03:54:21.231Z</updated>
     
-    <content type="html"><![CDATA[<p>##检测到 #include 错误。请更新 includePath解决办法</p><p>用vscode时遇到了这样的报错<br><img src="/image-2.png" alt="Alt text"></p><p>通过修改编译器路径等方法都没用</p><p>win+R打开终端<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure><p>复制如下内容 </p><p><img src="/SC%60W0$QSXZ%7DU1%7BFH%7DSNBZXL.png" alt="Alt text"> </p><p>在vscode中摁ctrl+shift+p搜索json文件 </p><p><img src="/image.png" alt="Alt text"> </p><p>将刚才复制内容粘贴至includePath中，注意格式 </p><p><img src="/J61%5D8MA_)FV8MQ~W%5BJBUM05.png" alt="Alt text"> </p><p>完成 </p><p><img src="/image-1.png" alt="Alt text"></p>]]></content>
+    <content type="html"><![CDATA[<p>##检测到 #include 错误。请更新 includePath解决办法</p><p>用vscode时遇到了这样的报错<br><img src="/images/a1.jpg" alt="bug" title="bug"></p><p>通过修改编译器路径等方法都没用</p><p>win+R打开终端<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure><p>复制如下内容 </p><p><img src="/images/a2.jpg" alt="bug" title="bug"></p><p>在vscode中摁ctrl+shift+p搜索json文件 </p><p><img src="/images/a5.jpg" alt="bug" title="bug"></p><p>将刚才复制内容粘贴至includePath中，注意格式 </p><p><img src="/images/a3.jpg" alt="bug" title="bug"></p><p>完成 </p><p><img src="/images/a4.jpg" alt="bug" title="bug"></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;##检测到 #include 错误。请更新 includePath解决办法&lt;/p&gt;
-&lt;p&gt;用vscode时遇到了这样的报错&lt;br&gt;&lt;img src=&quot;/image-2.png&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
-&lt;p&gt;通过修改编译器路径等方法都没用&lt;/p&gt;
-&lt;p&gt;wi</summary>
+&lt;p&gt;用vscode时遇到了这样的报错&lt;br&gt;&lt;img src=&quot;/images/a1.jpg&quot; alt=&quot;bug&quot; title=&quot;bug&quot;&gt;&lt;/p&gt;
+&lt;p&gt;通过修改编译器路径等方法都没用&lt;</summary>
       
     
     
