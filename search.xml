@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Test</title>
-    <url>/2023/11/01/text/</url>
-    <content><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><code>代码</code><br><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p>
-<p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>皇室奇兵2023.11.1平衡调整</title>
     <url>/2023/11/01/%E7%9A%87%E5%AE%A4%E5%A5%87%E5%85%B52023-11-1%E5%B9%B3%E8%A1%A1%E8%B0%83%E6%95%B4/</url>
     <content><![CDATA[<p><img src="/images/balance.jpg" alt="平衡调整" title="平衡调整"></p>
@@ -42,5 +35,12 @@
       <tags>
         <tag>bug</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Test</title>
+    <url>/2023/11/01/text/</url>
+    <content><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><code>代码</code><br><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p>
+<p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>
+]]></content>
   </entry>
 </search>
