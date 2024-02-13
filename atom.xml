@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-13T04:12:06.213Z</updated>
+  <updated>2024-02-13T09:50:39.288Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,20 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>检测到 &#92;#include 错误。请更新 includePath解决办法</title>
+    <title>检测到#include 错误。请更新 includePath解决办法</title>
     <link href="http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/"/>
     <id>http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/</id>
     <published>2024-02-13T03:45:14.000Z</published>
-    <updated>2024-02-13T04:12:06.213Z</updated>
+    <updated>2024-02-13T09:50:39.288Z</updated>
     
-    <content type="html"><![CDATA[<p>“检测到 #include 错误。请更新 includePath” 解决办法</p><p>用vscode时遇到了这样的报错<br><img src="/images/a1.png" alt="bug" title="bug"></p><p>通过修改编译器路径等方法都没用</p><p>win+R打开终端<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure><p>复制如下内容 </p><p><img src="/images/a2.png" alt="bug" title="bug"></p><p>在vscode中摁ctrl+shift+p搜索json文件 </p><p><img src="/images/a5.png" alt="bug" title="bug"></p><p>将刚才复制内容粘贴至includePath中，注意格式 </p><p><img src="/images/a3.png" alt="bug" title="bug"></p><p>完成 </p><p><img src="/images/a4.png" alt="bug" title="bug"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="“检测到-include-错误。请更新-includePath”-解决办法"><a href="#“检测到-include-错误。请更新-includePath”-解决办法" class="headerlink" title="“检测到 #include 错误。请更新 includePath” 解决办法"></a>“检测到 #include 错误。请更新 includePath” 解决办法</h1><p>用vscode时遇到了这样的报错<br><img src="/images/a1.png" alt="bug" title="bug"></p><p>通过修改编译器路径等方法都没用</p><p>win+R打开终端<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure><p>复制如下内容 </p><p><img src="/images/a2.png" alt="bug" title="bug"></p><p>在vscode中摁ctrl+shift+p搜索json文件 </p><p><img src="/images/a5.png" alt="bug" title="bug"></p><p>将刚才复制内容粘贴至includePath中，注意格式 </p><p><img src="/images/a3.png" alt="bug" title="bug"></p><p>完成 </p><p><img src="/images/a4.png" alt="bug" title="bug"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;“检测到 #include 错误。请更新 includePath” 解决办法&lt;/p&gt;
-&lt;p&gt;用vscode时遇到了这样的报错&lt;br&gt;&lt;img src=&quot;/images/a1.png&quot; alt=&quot;bug&quot; title=&quot;bug&quot;&gt;&lt;/p&gt;
-&lt;p&gt;通过修改编译器路径等方法都没用</summary>
+    <summary type="html">&lt;h1 id=&quot;“检测到-include-错误。请更新-includePath”-解决办法&quot;&gt;&lt;a href=&quot;#“检测到-include-错误。请更新-includePath”-解决办法&quot; class=&quot;headerlink&quot; title=&quot;“检测到 #include 错误。请</summary>
       
     
     
@@ -66,14 +64,16 @@
     <link href="http://example.com/2023/11/01/text/"/>
     <id>http://example.com/2023/11/01/text/</id>
     <published>2023-10-31T17:01:46.000Z</published>
-    <updated>2023-10-31T18:43:05.628Z</updated>
+    <updated>2024-02-13T09:50:38.294Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><code>代码</code><br><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p><p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><pre><code class="代码">printf(&quot;hello world&quot;);</code></pre><p><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p><p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;p&gt;&lt;code&gt;代码&lt;/code&gt;&lt;br&gt;&lt;font color=Blue&gt;蓝色&lt;/font&gt;&lt;br&gt;&lt;font color=Red&gt;红色&lt;/f</summary>
+    <summary type="html">&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;代码&quot;&gt;printf(&amp;quot;hello world&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;</summary>
       
     
     
