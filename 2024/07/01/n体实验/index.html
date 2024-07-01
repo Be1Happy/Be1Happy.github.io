@@ -22,31 +22,37 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="你好">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Be1Happy">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="在模拟由N个对象组成的引力交互系统中，每个对象的位置与速度随时间演进而持续变化，这一挑战即为N体问题，目标在于精确预测任一时间点上每个对象的确切位置。在三维空间背景下，每个对象通过坐标(x, y, z)及其沿x, y, z轴的速度分量(vx, vy, vz)来描述，且假设所有对象质量一致，简化为单位质量m&#x3D;1。引力作用遵循如下法则计算两物体间的相互吸引：这里，Fx，Fy，Fz代表引力在三">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nbody实验">
+<meta property="og:url" content="http://example.com/2024/07/01/n%E4%BD%93%E5%AE%9E%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Be1Happy">
-<meta property="og:description" content="你好">
+<meta property="og:description" content="在模拟由N个对象组成的引力交互系统中，每个对象的位置与速度随时间演进而持续变化，这一挑战即为N体问题，目标在于精确预测任一时间点上每个对象的确切位置。在三维空间背景下，每个对象通过坐标(x, y, z)及其沿x, y, z轴的速度分量(vx, vy, vz)来描述，且假设所有对象质量一致，简化为单位质量m&#x3D;1。引力作用遵循如下法则计算两物体间的相互吸引：这里，Fx，Fy，Fz代表引力在三">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/nbody1.png">
+<meta property="og:image" content="http://example.com/images/nbody2.png">
+<meta property="og:image" content="http://example.com/images/nbody3.png">
+<meta property="article:published_time" content="2024-07-01T07:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-01T07:07:32.868Z">
 <meta property="article:author" content="Be1Happy">
-<meta property="article:tag" content="ovo">
+<meta property="article:tag" content="nbody">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/nbody1.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/07/01/n%E4%BD%93%E5%AE%9E%E9%AA%8C/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Be1Happy</title>
+  <title>nbody实验 | Be1Happy</title>
   
 
 
@@ -194,9 +200,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -212,10 +219,9 @@
       <meta itemprop="name" content="Be1Happy">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/07/01/n%E4%BD%93%E5%AE%9E%E9%AA%8C/" class="post-title-link" itemprop="url">nbody实验</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          nbody实验
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -229,6 +235,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -251,194 +264,121 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>在模拟由N个对象组成的引力交互系统中，每个对象的位置与速度随时间演进而持续变化，这一挑战即为N体问题，目标在于精确预测任一时间点上每个对象的确切位置。<br>在三维空间背景下，每个对象通过坐标(x, y, z)及其沿x, y, z轴的速度分量(vx, vy, vz)来描述，且假设所有对象质量一致，简化为单位质量m&#x3D;1。<br>引力作用遵循如下法则计算两物体间的相互吸引：<br><img src="/images/nbody1.png" alt="nbody" title="nbody"><br>这里，Fx，Fy，Fz代表引力在三维坐标轴上的分量，dx，dy，dz为两物体在相应坐标轴上的距离差，d是两物体间总距离的欧氏距离，并加入了一个小的软化因子以避免除零异常。<br>速度更新依据总引力的积分：<br><img src="/images/nbody2.png" alt="nbody" title="nbody"><br>其中，△vx，△vy，△vz为速度增量，dt代表极小的时间间隔。<br>随后，基于新的速度更新位置：<br><img src="/images/nbody3.png" alt="nbody" title="nbody"><br>在传统的串行处理中，通过反复执行“累加引力→速度更新→位置更新”的流程来逐步推进模拟。<br>转至CUDA C并行环境，每个CUDA线程分别处理一个天体，首先通过cudaMemcpy将主存数据传输到GPU。各线程独立执行上述“引力累加、速度与位置更新”的循环，充分利用GPU的并行处理能力。计算完毕后，再次运用cudaMemcpy将结果数据从GPU回传至主存，完成并行模拟过程。</p>
+        <p>在模拟由N个对象组成的引力交互系统中，每个对象的位置与速度随时间演进而持续变化，这一挑战即为N体问题，目标在于精确预测任一时间点上每个对象的确切位置。<br>在三维空间背景下，每个对象通过坐标(x, y, z)及其沿x, y, z轴的速度分量(vx, vy, vz)来描述，且假设所有对象质量一致，简化为单位质量m&#x3D;1。<br>引力作用遵循如下法则计算两物体间的相互吸引：<br><img src="/images/nbody1.png" alt="nbody" title="nbody"><br>这里，Fx，Fy，Fz代表引力在三维坐标轴上的分量，dx，dy，dz为两物体在相应坐标轴上的距离差，d是两物体间总距离的欧氏距离，并加入了一个小的软化因子以避免除零异常。<br>速度更新依据总引力的积分：<br><img src="/images/nbody2.png" alt="nbody" title="nbody"><br>其中，△vx，△vy，△vz为速度增量，dt代表极小的时间间隔。<br>随后，基于新的速度更新位置：<br><img src="/images/nbody3.png" alt="nbody" title="nbody"><br>在传统的串行处理中，通过反复执行“累加引力→速度更新→位置更新”的流程来逐步推进模拟。<br>转至CUDA C并行环境，每个CUDA线程分别处理一个天体，首先通过cudaMemcpy将主存数据传输到GPU。各线程独立执行上述“引力累加、速度与位置更新”的循环，充分利用GPU的并行处理能力。计算完毕后，再次运用cudaMemcpy将结果数据从GPU回传至主存，完成并行模拟过程。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;math.h&gt;</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &quot;timer.h&quot;</span><br><span class="line">#include &quot;check.h&quot;</span><br><span class="line">#include &lt;cuda_runtime.h&gt;</span><br><span class="line"></span><br><span class="line">#define SOFTENING 1e-9f</span><br><span class="line">#define BLOCK_SIZE 128</span><br><span class="line">#define BLOCK_STEP 32</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> * Each body contains x, y, and z coordinate positions,</span><br><span class="line"> * as well as velocities in the x, y, and z directions.</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">typedef struct</span><br><span class="line">&#123;</span><br><span class="line">    float x, y, z, vx, vy, vz;</span><br><span class="line">&#125; Body;</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> * Do not modify this function. A constraint of this exercise is</span><br><span class="line"> * that it remain a host function.</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">void randomizeBodies(float *data, int n)</span><br><span class="line">&#123;</span><br><span class="line">    for (int i = 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        data[i] = 2.0f * (rand() / (float)RAND_MAX) - 1.0f;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> * This function calculates the gravitational impact of all bodies in the system</span><br><span class="line"> * on all others, but does not update their positions.</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">__global__ void bodyForce(Body *p, float dt, int n)</span><br><span class="line">&#123;</span><br><span class="line">    // 从全局内存获取本线程负责的物体。</span><br><span class="line">    int i = (threadIdx.x + blockIdx.x * blockDim.x) % n;</span><br><span class="line">    Body body = p[i];</span><br><span class="line"></span><br><span class="line">    // 块级共享内存，用于缓存一个批次的施力物体。</span><br><span class="line">    __shared__ float3 tile[BLOCK_SIZE];</span><br><span class="line"></span><br><span class="line">    float Fx = 0.0f;</span><br><span class="line">    float Fy = 0.0f;</span><br><span class="line">    float Fz = 0.0f;</span><br><span class="line"></span><br><span class="line">    int nBlocks = n / BLOCK_SIZE;</span><br><span class="line">    int k = blockIdx.x + blockIdx.x / nBlocks;</span><br><span class="line"></span><br><span class="line">#pragma unroll 32</span><br><span class="line">    for (int swap = 0; swap &lt; n / (BLOCK_STEP * BLOCK_SIZE); swap++)</span><br><span class="line">    &#123;</span><br><span class="line">        k %= nBlocks;</span><br><span class="line"></span><br><span class="line">        // 从全局内存获取新一批物体，装入共享内存。</span><br><span class="line">        Body temp = p[k * BLOCK_SIZE + threadIdx.x];</span><br><span class="line">        tile[threadIdx.x] = make_float3(temp.x, temp.y, temp.z);</span><br><span class="line"></span><br><span class="line">        // 确保新一批物体已经全部装入。</span><br><span class="line">        __syncthreads();</span><br><span class="line"></span><br><span class="line">#pragma unroll 32</span><br><span class="line">        // 叠加新一批物体施加在负责物体上的引力。</span><br><span class="line">        for (int j = 0; j &lt; BLOCK_SIZE; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            float dx = tile[j].x - body.x;</span><br><span class="line">            float dy = tile[j].y - body.y;</span><br><span class="line">            float dz = tile[j].z - body.z;</span><br><span class="line">            float distSqr = dx * dx + dy * dy + dz * dz + SOFTENING;</span><br><span class="line">            float invDist = rsqrtf(distSqr);</span><br><span class="line">            float invDist3 = invDist * invDist * invDist;</span><br><span class="line"></span><br><span class="line">            Fx += dx * invDist3;</span><br><span class="line">            Fy += dy * invDist3;</span><br><span class="line">            Fz += dz * invDist3;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 确保新一批物体已经全部消耗。</span><br><span class="line">        __syncthreads();</span><br><span class="line"></span><br><span class="line">        k += BLOCK_STEP;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 使用原子加法更新速度，避免竞态问题。</span><br><span class="line">    atomicAdd(&amp;p[i].vx, dt * Fx);</span><br><span class="line">    atomicAdd(&amp;p[i].vy, dt * Fy);</span><br><span class="line">    atomicAdd(&amp;p[i].vz, dt * Fz);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">__global__ void integratePosition(Body *p, float dt, int n)</span><br><span class="line">&#123;</span><br><span class="line">    // 计算本线程负责的物体的下标。</span><br><span class="line">    int i = threadIdx.x + blockIdx.x * blockDim.x;</span><br><span class="line"></span><br><span class="line">    if (i &gt;= n)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 更新坐标。</span><br><span class="line">    p[i].x += p[i].vx * dt;</span><br><span class="line">    p[i].y += p[i].vy * dt;</span><br><span class="line">    p[i].z += p[i].vz * dt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(const int argc, const char **argv)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     * Do not change the value for `nBodies` here. If you would like to modify it,</span><br><span class="line">     * pass values into the command line.</span><br><span class="line">     */</span><br><span class="line"></span><br><span class="line">    int nBodies = 2 &lt;&lt; 11;</span><br><span class="line">    int salt = 0;</span><br><span class="line">    if (argc &gt; 1)</span><br><span class="line">        nBodies = 2 &lt;&lt; atoi(argv[1]);</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     * This salt is for assessment reasons. Tampering with it will result in automatic failure.</span><br><span class="line">     */</span><br><span class="line"></span><br><span class="line">    if (argc &gt; 2)</span><br><span class="line">        salt = atoi(argv[2]);</span><br><span class="line"></span><br><span class="line">    const float dt = 0.01f; // time step</span><br><span class="line">    const int nIters = 10;  // simulation iterations</span><br><span class="line"></span><br><span class="line">    int bytes = nBodies * sizeof(Body);</span><br><span class="line">    float *buf;</span><br><span class="line">    cudaMallocHost(&amp;buf, bytes);</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     * As a constraint of this exercise, `randomizeBodies` must remain a host function.</span><br><span class="line">     */</span><br><span class="line"></span><br><span class="line">    randomizeBodies(buf, 6 * nBodies); // Init pos / vel data</span><br><span class="line"></span><br><span class="line">    float *d_buf;</span><br><span class="line">    cudaMalloc(&amp;d_buf, bytes);</span><br><span class="line">    Body *d_p = (Body *)d_buf;</span><br><span class="line">    cudaMemcpy(d_buf, buf, bytes, cudaMemcpyHostToDevice);</span><br><span class="line"></span><br><span class="line">    int nBlocks = nBodies / BLOCK_SIZE;</span><br><span class="line"></span><br><span class="line">    double totalTime = 0.0;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     * This simulation will run for 10 cycles of time, calculating gravitational</span><br><span class="line">     * interaction amongst bodies, and adjusting their positions to reflect.</span><br><span class="line">     */</span><br><span class="line"></span><br><span class="line">    /*******************************************************************/</span><br><span class="line">    // Do not modify these 2 lines of code.</span><br><span class="line">    for (int iter = 0; iter &lt; nIters; iter++)</span><br><span class="line">    &#123;</span><br><span class="line">        StartTimer();</span><br><span class="line">        /*******************************************************************/</span><br><span class="line"></span><br><span class="line">        /*</span><br><span class="line">         * You will likely wish to refactor the work being done in `bodyForce`,</span><br><span class="line">         * as well as the work to integrate the positions.</span><br><span class="line">         */</span><br><span class="line"></span><br><span class="line">        bodyForce&lt;&lt;&lt;nBlocks * BLOCK_STEP, BLOCK_SIZE&gt;&gt;&gt;(d_p, dt, nBodies); // compute interbody forces</span><br><span class="line"></span><br><span class="line">        /*</span><br><span class="line">         * This position integration cannot occur until this round of `bodyForce` has completed.</span><br><span class="line">         * Also, the next round of `bodyForce` cannot begin until the integration is complete.</span><br><span class="line">         */</span><br><span class="line"></span><br><span class="line">        integratePosition&lt;&lt;&lt;nBlocks, BLOCK_SIZE&gt;&gt;&gt;(d_p, dt, nBodies);</span><br><span class="line"></span><br><span class="line">        if (iter == nIters - 1)</span><br><span class="line">        &#123;</span><br><span class="line">            cudaMemcpy(buf, d_buf, bytes, cudaMemcpyDeviceToHost);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        /*******************************************************************/</span><br><span class="line">        // Do not modify the code in this section.</span><br><span class="line">        const double tElapsed = GetTimer() / 1000.0;</span><br><span class="line">        totalTime += tElapsed;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    double avgTime = totalTime / (double)(nIters);</span><br><span class="line">    float billionsOfOpsPerSecond = 1e-9 * nBodies * nBodies / avgTime;</span><br><span class="line"></span><br><span class="line">#ifdef ASSESS</span><br><span class="line">    checkPerformance(buf, billionsOfOpsPerSecond, salt);</span><br><span class="line">#else</span><br><span class="line">    checkAccuracy(buf, nBodies);</span><br><span class="line">    printf(&quot;%d Bodies: average %0.3f Billion Interactions / second\n&quot;, nBodies, billionsOfOpsPerSecond);</span><br><span class="line">    salt += 1;</span><br><span class="line">#endif</span><br><span class="line">    /*******************************************************************/</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     * Feel free to modify code below.</span><br><span class="line">     */</span><br><span class="line"></span><br><span class="line">    cudaFree(d_buf);</span><br><span class="line">    cudaFreeHost(buf);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+        <div class="reward-container">
+  <div>谢谢你ovo</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/">
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Be1Happy 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Be1Happy 支付宝">
+        <p>支付宝</p>
+      </div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/liquidcat.png">
-      <meta itemprop="name" content="Be1Happy">
-      <meta itemprop="description" content="你好">
-    </span>
+  </div>
+</div>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Be1Happy">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/" class="post-title-link" itemprop="url">检测到#include 错误。请更新 includePath解决办法</a>
-        </h2>
+        
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Be1Happy
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2024/07/01/n%E4%BD%93%E5%AE%9E%E9%AA%8C/" title="nbody实验">http://example.com/2024/07/01/n体实验/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-              <time title="创建时间：2024-02-13 11:45:14 / 修改时间：17:50:39" itemprop="dateCreated datePublished" datetime="2024-02-13T11:45:14+08:00">2024-02-13</time>
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
             </span>
 
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>154</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>1 分钟</span>
-            </span>
-
+            <span class="label">WeChat</span>
+          </a>
         </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="“检测到-include-错误。请更新-includePath”-解决办法"><a href="#“检测到-include-错误。请更新-includePath”-解决办法" class="headerlink" title="“检测到 #include 错误。请更新 includePath” 解决办法"></a>“检测到 #include 错误。请更新 includePath” 解决办法</h1><p>用vscode时遇到了这样的报错<br><img src="/images/a1.png" alt="bug" title="bug"></p>
-<p>通过修改编译器路径等方法都没用</p>
-<p>win+R打开终端<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ -v -E -x c++ -</span><br></pre></td></tr></table></figure>
-<p>复制如下内容 </p>
-<p><img src="/images/a2.png" alt="bug" title="bug"></p>
-<p>在vscode中摁ctrl+shift+p搜索json文件 </p>
-<p><img src="/images/a5.png" alt="bug" title="bug"></p>
-<p>将刚才复制内容粘贴至includePath中，注意格式 </p>
-<p><img src="/images/a3.png" alt="bug" title="bug"></p>
-<p>完成 </p>
-<p><img src="/images/a4.png" alt="bug" title="bug"></p>
-
-      
-    </div>
-
-    
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/01/text/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/liquidcat.png">
-      <meta itemprop="name" content="Be1Happy">
-      <meta itemprop="description" content="你好">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Be1Happy">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/01/text/" class="post-title-link" itemprop="url">Test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-11-01 01:01:46" itemprop="dateCreated datePublished" datetime="2023-11-01T01:01:46+08:00">2023-11-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-07-01 14:59:53" itemprop="dateModified" datetime="2024-07-01T14:59:53+08:00">2024-07-01</time>
-              </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>39</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>1 分钟</span>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
             </span>
 
+            <span class="label">RSS</span>
+          </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><pre><code class="代码">printf(&quot;hello world&quot;);
-</code></pre>
-<p><font color=Blue>蓝色</font><br><font color=Red>红色</font><br><font color=Green>绿色</font>  </p>
-<p><img src="/images/liquidcat.png" alt="猫是液体" title="猫是液体"></p>
-
-      
     </div>
+  </div>
 
-    
-    
-    
-    
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/nbody/" rel="tag"># nbody</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/02/13/%E6%A3%80%E6%B5%8B%E5%88%B0%20#include%20%E9%94%99%E8%AF%AF%E3%80%82%E8%AF%B7%E6%9B%B4%E6%96%B0%20includePath/" rel="prev" title="检测到#include 错误。请更新 includePath解决办法">
+      <i class="fa fa-chevron-left"></i> 检测到#include 错误。请更新 includePath解决办法
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81OTE0OC8zNTYxMA=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -693,6 +633,21 @@ $(document).ready(function() {
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
